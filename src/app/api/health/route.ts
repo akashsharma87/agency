@@ -16,6 +16,10 @@ export async function GET() {
             throw new Error(`MongoDB is ${states[state]}`);
         }
 
+        if (!mongoose.connection.db) {
+            throw new Error('Database object is not available');
+        }
+
         // Ping the database
         await mongoose.connection.db.admin().ping();
 

@@ -18,19 +18,22 @@ const options = {
 
 // Global cache to prevent multiple connections in development
 declare global {
-    var mongoose: {
+    var mongooseCache: {
         conn: typeof mongoose | null;
         promise: Promise<typeof mongoose> | null;
-    };
+    } | undefined;
 }
 
-let cached = global.mongoose;
+let cached = global.mongooseCache;
 
 if (!cached) {
-    cached = global.mongoose = { conn: null, promise: null };
+    cached = global.mongooseCache = { conn: null, promise: null };
 }
 
 async function connectDB(): Promise<typeof mongoose> {
+    if (!cached) {
+        cached = global.mongooseCache = { conn: null, promise: null };
+    }
     if (cached.conn) {
         console.log('✅ Using cached MongoDB connection');
         return cached.conn;
