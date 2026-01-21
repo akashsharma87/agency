@@ -43,19 +43,19 @@ export default function FAQ() {
     const [openIndex, setOpenIndex] = useState<number | null>(null);
 
     return (
-        <section className="py-32 px-4 max-w-4xl mx-auto">
-            <div className="mb-16 text-center">
+        <section className="py-20 md:py-32 px-4 max-w-4xl mx-auto">
+            <div className="mb-12 md:mb-16 text-center">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5 }}
                 >
-                    <h2 className="text-4xl md:text-6xl font-bold mb-6">
+                    <h2 className="text-3xl md:text-6xl font-bold mb-4 md:mb-6">
                         Frequently Asked <br />
                         <span className="text-muted">Questions</span>
                     </h2>
-                    <p className="text-muted text-lg">
+                    <p className="text-muted text-base md:text-lg px-4">
                         Everything you need to know about working with us.
                     </p>
                 </motion.div>

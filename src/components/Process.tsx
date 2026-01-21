@@ -43,22 +43,22 @@ const processSteps = [
 
 export default function Process() {
     return (
-        <section id="process" className="py-32 px-4 max-w-7xl mx-auto relative">
+        <section id="process" className="py-20 md:py-32 px-4 max-w-7xl mx-auto relative">
             {/* Background decoration */}
             <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-accent/5 blur-[100px] rounded-full pointer-events-none" />
 
-            <div className="mb-20">
+            <div className="mb-12 md:mb-20">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5 }}
                 >
-                    <h2 className="text-4xl md:text-6xl font-bold mb-6">
+                    <h2 className="text-3xl md:text-6xl font-bold mb-6">
                         From Idea to Launch <br />
                         <span className="text-muted">in 5 Weeks</span>
                     </h2>
-                    <p className="text-muted text-lg max-w-2xl">
+                    <p className="text-muted text-base md:text-lg max-w-2xl">
                         Our battle-tested process has helped 50+ startups ship products faster.
                         No bureaucracy, just results.
                     </p>

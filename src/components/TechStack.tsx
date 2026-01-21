@@ -63,15 +63,15 @@ export default function TechStack() {
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-accent/10 blur-[150px] rounded-full pointer-events-none" />
 
             <div className="max-w-7xl mx-auto px-4 relative z-10">
-                <div className="text-center mb-20">
+                <div className="text-center mb-12 md:mb-20">
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
-                        className="text-4xl md:text-6xl font-bold mb-6 text-white"
+                        className="text-3xl md:text-6xl font-bold mb-6 text-white"
                     >
                         Our Tech <span className="text-accent">Arsenal</span>
                     </motion.h2>
-                    <p className="text-white/60 text-lg max-w-2xl mx-auto">
+                    <p className="text-white/60 text-base md:text-lg max-w-2xl mx-auto px-4">
                         We don't just use tools; we engineer ecosystems. Our stack is curated for
                         maximum performance, reliability, and scale.
                     </p>

@@ -61,8 +61,8 @@ export default function Home() {
             </div>
 
             {/* Copyright Small Print */}
-            <div className="flex flex-col md:flex-row justify-between w-full pt-12 border-t border-white/5 gap-6 text-[10px] uppercase tracking-[0.2em] font-bold text-white/20">
-              <p>© 2026 weWork AI Agency. Built with pride in New Delhi.</p>
+            <div className="flex flex-col md:flex-row justify-between items-center w-full pt-12 border-t border-white/5 gap-6 text-[10px] uppercase tracking-[0.2em] font-bold text-white/20">
+              <p className="text-center md:text-left">© 2026 weWork AI Agency. Built with pride in New Delhi.</p>
               <div className="flex gap-8">
                 <a href="#" className="hover:text-white transition-colors">Privacy</a>
                 <a href="#" className="hover:text-white transition-colors">Terms</a>

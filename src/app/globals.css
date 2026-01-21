@@ -6,11 +6,12 @@
   --foreground: #F7F8F8;
   --muted: #8A8F98;
   --accent: #5E6AD2;
-  
+
   --glass-border: rgba(255, 255, 255, 0.08);
   --glass-bg: rgba(8, 9, 10, 0.6);
-  
-  --font-sans: var(--font-geist-sans); /* Keeping Geist or changing to Inter if I pull it */
+
+  --font-sans: var(--font-geist-sans);
+  /* Keeping Geist or changing to Inter if I pull it */
 }
 
 @theme inline {
@@ -38,7 +39,7 @@ body {
 }
 
 .glass-card {
-  background: linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0) 100%);
   border: 1px solid var(--glass-border);
   backdrop-filter: blur(10px);
 }

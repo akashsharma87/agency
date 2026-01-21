@@ -63,18 +63,18 @@ const testimonials = [
 
 export default function Testimonials() {
     return (
-        <section className="py-32 px-4 bg-black relative overflow-hidden">
+        <section className="py-20 md:py-32 px-4 bg-black relative overflow-hidden">
             {/* Background elements */}
             <div className="absolute top-0 left-1/4 w-[500px] h-[500px] bg-accent/5 blur-[120px] rounded-full pointer-events-none" />
             <div className="absolute bottom-0 right-1/4 w-[500px] h-[500px] bg-blue-500/5 blur-[120px] rounded-full pointer-events-none" />
 
             <div className="max-w-7xl mx-auto relative z-10">
-                <div className="flex flex-col md:flex-row justify-between items-end mb-20 gap-8">
+                <div className="flex flex-col md:flex-row justify-between items-start md:items-end mb-12 md:mb-20 gap-8">
                     <motion.div
                         initial={{ opacity: 0, x: -20 }}
                         whileInView={{ opacity: 1, x: 0 }}
                     >
-                        <h2 className="text-4xl md:text-6xl font-bold mb-6 text-white leading-tight">
+                        <h2 className="text-3xl md:text-6xl font-bold mb-4 md:mb-6 text-white leading-tight">
                             Trusted by Founders <br />
                             <span className="text-white/40">Who Ship Fast</span>
                         </h2>
@@ -82,7 +82,7 @@ export default function Testimonials() {
                     <motion.p
                         initial={{ opacity: 0, x: 20 }}
                         whileInView={{ opacity: 1, x: 0 }}
-                        className="text-white/60 text-lg max-w-md"
+                        className="text-white/60 text-base md:text-lg max-w-md"
                     >
                         We've helped 50+ startups automate their core operations and launch
                         AI-native products in record time.

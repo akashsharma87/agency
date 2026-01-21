@@ -60,19 +60,19 @@ const plans = [
 
 export default function Pricing() {
     return (
-        <section id="pricing" className="py-32 px-4 max-w-7xl mx-auto">
-            <div className="mb-20 text-center">
+        <section id="pricing" className="py-20 md:py-32 px-4 max-w-7xl mx-auto">
+            <div className="mb-12 md:mb-20 text-center">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5 }}
                 >
-                    <h2 className="text-4xl md:text-6xl font-bold mb-6">
+                    <h2 className="text-3xl md:text-6xl font-bold mb-6 pt-10">
                         Transparent Pricing. <br />
                         <span className="text-muted">No Hidden Costs.</span>
                     </h2>
-                    <p className="text-muted text-lg max-w-2xl mx-auto">
+                    <p className="text-muted text-base md:text-lg max-w-2xl mx-auto px-4">
                         Choose the plan that fits your startup stage. All plans include unlimited revisions
                         and dedicated support.
                     </p>

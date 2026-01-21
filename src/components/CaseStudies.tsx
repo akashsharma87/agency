@@ -105,19 +105,19 @@ function ParallaxImage({ src, alt }: { src: string; alt: string }) {
 
 export default function CaseStudies() {
     return (
-        <section id="work" className="py-32 px-4 max-w-7xl mx-auto">
-            <div className="mb-20">
+        <section id="work" className="py-20 md:py-32 px-4 max-w-7xl mx-auto">
+            <div className="mb-12 md:mb-20">
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
                     transition={{ duration: 0.5 }}
                 >
-                    <h2 className="text-4xl md:text-6xl font-bold mb-6">
+                    <h2 className="text-3xl md:text-6xl font-bold mb-6">
                         Work That Speaks <br />
                         <span className="text-muted">Louder Than Words</span>
                     </h2>
-                    <p className="text-muted text-lg max-w-2xl">
+                    <p className="text-muted text-base md:text-lg max-w-2xl px-2">
                         Real projects. Real results. We've helped startups raise $10M+ in funding
                         and scale to millions of users.
                     </p>

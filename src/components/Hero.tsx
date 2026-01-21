@@ -64,17 +64,17 @@ export default function Hero() {
       </div>
 
       {/* Content Container */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 text-center">
+      <div className="relative z-10 w-full max-w-5xl mx-auto px-4 text-center flex flex-col items-center">
         {/* Badge */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-xl mb-8 group hover:border-accent/50 transition-colors"
+          className="inline-flex items-center gap-2 px-3 py-1.5 md:px-4 md:py-2 rounded-full border border-white/10 bg-white/5 backdrop-blur-xl mb-6 md:mb-8 group hover:border-accent/50 transition-colors"
         >
-          <div className="w-2 h-2 rounded-full bg-accent animate-ping" />
+          <div className="w-1.5 h-1.5 md:w-2 md:h-2 rounded-full bg-accent animate-ping" />
           <Sparkles className="w-4 h-4 text-accent" />
-          <span className="text-sm font-medium text-white/80">The Future of AI Automation is Here</span>
+          <span className="text-[10px] md:text-sm font-medium text-white/80 uppercase tracking-wider">The Future of AI Automation is Here</span>
         </motion.div>
 
         {/* Main Heading */}
@@ -82,10 +82,10 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="text-6xl md:text-8xl font-bold tracking-tight mb-8 leading-[1.1]"
+          className="text-3xl sm:text-4xl md:text-8xl font-black tracking-tight mb-6 md:mb-8 leading-[1.1] flex flex-col items-center"
         >
-          <span className="inline-block text-white">We Build</span><br />
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent via-blue-400 to-accent bg-[length:200%_auto] animate-shimmer">
+          <span className="block text-white">We Build</span>
+          <span className="block text-transparent bg-clip-text bg-gradient-to-r from-accent via-blue-400 to-accent bg-[length:200%_auto] animate-shimmer py-1 px-4 max-w-[320px] sm:max-w-none">
             Next-Gen AI Systems.
           </span>
         </motion.h1>
@@ -95,7 +95,7 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-lg md:text-xl text-white/60 max-w-3xl mx-auto mb-12 leading-relaxed"
+          className="text-sm sm:text-base md:text-xl text-white/60 max-w-[280px] sm:max-w-xl md:max-w-3xl mx-auto mb-10 md:mb-12 leading-relaxed"
         >
           From Autonomous AI Agents to Enterprise Automation Workflows.
           We leverage <span className="text-white font-medium">LangChain</span>,
@@ -108,38 +108,38 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-20"
+          className="flex flex-col sm:flex-row gap-4 md:gap-6 justify-center items-center mb-16 md:mb-20 px-6 w-full max-w-md mx-auto"
         >
           <Link
             href="#contact"
-            className="group relative px-8 py-4 bg-white text-black font-bold rounded-xl hover:scale-105 transition-all flex items-center gap-3 overflow-hidden"
+            className="w-full sm:w-auto group relative px-8 py-4 bg-white text-black font-bold rounded-xl hover:scale-105 transition-all flex items-center justify-center gap-3 overflow-hidden whitespace-nowrap"
           >
             <div className="absolute inset-0 bg-accent/10 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />
-            <span className="relative">Book a Strategy Call</span>
+            <span className="relative text-base">Book a Strategy Call</span>
             <ArrowRight className="w-5 h-5 relative transition-transform group-hover:translate-x-1" />
           </Link>
           <Link
             href="#work"
-            className="px-8 py-4 text-white/90 font-semibold rounded-xl border border-white/10 bg-white/5 backdrop-blur-md hover:bg-white/10 transition-all"
+            className="w-full sm:w-auto px-8 py-4 text-white/90 font-semibold rounded-xl border border-white/10 bg-white/5 backdrop-blur-md hover:bg-white/10 transition-all text-center text-base whitespace-nowrap"
           >
             View Our Work
           </Link>
         </motion.div>
 
         {/* Tech Marquee Carousel */}
-        <div className="mb-20 relative group/marquee max-w-6xl mx-auto overflow-hidden py-10">
-          <div className="absolute inset-y-0 left-0 w-32 bg-gradient-to-r from-black to-transparent z-10" />
-          <div className="absolute inset-y-0 right-0 w-32 bg-gradient-to-l from-black to-transparent z-10" />
+        <div className="mb-16 md:mb-20 relative group/marquee max-w-6xl mx-auto overflow-hidden py-6 md:py-10">
+          <div className="absolute inset-y-0 left-0 w-16 md:w-32 bg-gradient-to-r from-black to-transparent z-10" />
+          <div className="absolute inset-y-0 right-0 w-16 md:w-32 bg-gradient-to-l from-black to-transparent z-10" />
 
-          <div className="flex overflow-hidden gap-12 select-none">
+          <div className="flex overflow-hidden gap-8 md:gap-12 select-none">
             <motion.div
               animate={{ x: [0, -1500] }}
               transition={{ duration: 40, repeat: Infinity, ease: "linear" }}
-              className="flex flex-none gap-20 items-center min-w-full"
+              className="flex flex-none gap-12 md:gap-20 items-center min-w-full"
             >
               {[...techLogos, ...techLogos, ...techLogos].map((logo, i) => (
-                <div key={i} className="flex-none flex items-center gap-4 opacity-30 hover:opacity-100 transition-all duration-500 hover:scale-110 grayscale hover:grayscale-0">
-                  <div className="relative w-12 h-12">
+                <div key={i} className="flex-none flex items-center gap-3 md:gap-4 opacity-30 hover:opacity-100 transition-all duration-500 hover:scale-110 grayscale hover:grayscale-0">
+                  <div className="relative w-8 h-8 md:w-12 md:h-12">
                     <Image
                       src={logo.path}
                       alt={logo.name}
@@ -148,7 +148,7 @@ export default function Hero() {
                       unoptimized
                     />
                   </div>
-                  <span className="text-sm font-black text-white tracking-[0.3em] uppercase hidden md:block">
+                  <span className="text-[10px] md:text-sm font-black text-white tracking-[0.2em] md:tracking-[0.3em] uppercase hidden sm:block">
                     {logo.name}
                   </span>
                 </div>
@@ -162,12 +162,12 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.5 }}
-          className="pt-12 border-t border-white/5 flex flex-wrap justify-center gap-12 md:gap-24 lg:gap-32"
+          className="pt-10 md:pt-12 border-t border-white/5 grid grid-cols-2 md:flex md:flex-wrap justify-center gap-8 md:gap-24 lg:gap-32"
         >
           {mainStats.map((stat, i) => (
             <div key={i} className="flex flex-col items-center">
-              <span className="text-4xl md:text-5xl font-black text-white">{stat.number}</span>
-              <span className="text-xs uppercase tracking-[0.3em] font-bold text-white/30 mt-2">{stat.label}</span>
+              <span className="text-3xl md:text-5xl font-black text-white">{stat.number}</span>
+              <span className="text-[10px] md:text-xs uppercase tracking-[0.2em] md:tracking-[0.3em] font-bold text-white/30 mt-2 text-center">{stat.label}</span>
             </div>
           ))}
         </motion.div>

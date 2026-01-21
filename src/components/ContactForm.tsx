@@ -58,11 +58,11 @@ export default function ContactForm() {
     };
 
     return (
-        <section id="contact" className="py-32 px-4 max-w-7xl mx-auto relative overflow-hidden">
+        <section id="contact" className="py-20 md:py-32 px-4 max-w-7xl mx-auto relative overflow-hidden">
             {/* Background decoration */}
             <div className="absolute top-1/2 right-0 w-[600px] h-[600px] bg-accent/5 blur-[120px] rounded-full pointer-events-none" />
 
-            <div className="grid md:grid-cols-2 gap-16 items-start relative z-10">
+            <div className="grid md:grid-cols-2 gap-12 md:gap-16 items-start relative z-10">
                 {/* Left side - Info */}
                 <motion.div
                     initial={{ opacity: 0, x: -30 }}
@@ -70,11 +70,11 @@ export default function ContactForm() {
                     viewport={{ once: true }}
                     transition={{ duration: 0.5 }}
                 >
-                    <h2 className="text-4xl md:text-6xl font-bold mb-6">
+                    <h2 className="text-3xl md:text-6xl font-bold mb-6">
                         Let's Build <br />
                         <span className="text-muted">Something Amazing</span>
                     </h2>
-                    <p className="text-muted text-lg mb-8 leading-relaxed">
+                    <p className="text-muted text-base md:text-lg mb-8 leading-relaxed">
                         Ready to transform your business with AI and automation?
                         Fill out the form and we'll get back to you within 24 hours.
                     </p>
